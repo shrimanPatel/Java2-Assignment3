@@ -130,6 +130,11 @@ public class products extends HttpServlet {
         }
     }
     
+    /**
+     * doPut method updates the data for given row.
+     * @param request
+     * @param response
+     */
     @Override
     protected void doPut(HttpServletRequest request, HttpServletResponse response) {
 
@@ -150,6 +155,12 @@ public class products extends HttpServlet {
         }
     }
     
+    /**
+     * doDelete method deletes the data for given productID.
+     * @param request
+     * @param response
+     * @throws IOException
+     */
     @Override
     protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Set<String> keySet = request.getParameterMap().keySet();
